@@ -1,0 +1,14 @@
+# Backend
+vendor-backend/node_modules/
+vendor-backend/.env
+vendor-backend/uploads/
+# Frontend
+vendor-management/node_modules/
+
+vendor-management/.env
+
+# All node_modules
+**/node_modules/
+
+# All environment files
+**/.env

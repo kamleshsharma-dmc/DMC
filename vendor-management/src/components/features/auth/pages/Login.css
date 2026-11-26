@@ -1,0 +1,7 @@
+/* Change button: same look as the original; on hover only the shadow grows (bg color unchanged). */
+.change-btn {
+  transition: box-shadow 0.2s ease;
+}
+.change-btn:hover {
+  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.35);
+}

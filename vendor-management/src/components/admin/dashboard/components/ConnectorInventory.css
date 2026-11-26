@@ -1,0 +1,371 @@
+.connector-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  min-width: 0;
+}
+
+.connector-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.connector-summary-card {
+  min-height: 117px;
+  padding: 20px 21px;
+  border: 1px solid #d6e7e5;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.connector-summary-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #668184;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.connector-summary-label svg {
+  flex: 0 0 auto;
+  color: #00b9a8;
+}
+
+.connector-summary-card > strong {
+  display: block;
+  margin-top: 10px;
+  color: #073438;
+  font-family: Sora, Manrope, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.connector-inventory {
+  min-width: 0;
+}
+
+.connector-inventory-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(290px, 397px);
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 15px;
+}
+
+.connector-inventory-heading h2 {
+  margin: 0;
+  color: #073438;
+  font-family: Sora, Manrope, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.connector-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.connector-search,
+.connector-status-filter {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  border: 1px solid #d6e7e5;
+  border-radius: 12px;
+  background: #f3fbfa;
+  color: #668184;
+}
+
+.connector-search {
+  gap: 9px;
+  padding: 0 12px;
+}
+
+.connector-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #073438;
+  font-size: 14px;
+}
+
+.connector-search input::placeholder {
+  color: #82999b;
+}
+
+.connector-status-filter select {
+  width: 100%;
+  height: 38px;
+  padding: 0 13px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #315459;
+  font-size: 14px;
+}
+
+.connector-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.connector-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #ffffff;
+  color: #668184;
+  font-size: 14px;
+}
+
+.connector-table thead {
+  background: #e8f4f2;
+}
+
+.connector-table th {
+  height: 44px;
+  padding: 10px 16px;
+  color: #547174;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.connector-table th:first-child {
+  width: 27%;
+}
+
+.connector-table th:nth-child(2) {
+  width: 16%;
+}
+
+.connector-table th:nth-child(3) {
+  width: 18%;
+}
+
+.connector-table th:nth-child(4) {
+  width: 8%;
+}
+
+.connector-table th:nth-child(5) {
+  width: 14%;
+}
+
+.connector-table th:last-child {
+  width: 120px;
+}
+
+.connector-table td {
+  height: 77px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e0ecea;
+  white-space: nowrap;
+}
+
+.connector-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.connector-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 11px;
+  background: #d9f6f1;
+  color: #07505a;
+}
+
+.connector-name-cell strong,
+.connector-name-cell small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.connector-name-cell strong {
+  color: #073438;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.connector-name-cell small {
+  margin-top: 3px;
+  color: #71888a;
+  font-size: 12px;
+}
+
+.connector-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.connector-status-connected {
+  background: #e2f3e7;
+  color: #27a451;
+}
+
+.connector-status-attention {
+  background: #fff0d9;
+  color: #38525a;
+}
+
+.connector-record-count {
+  color: #073438;
+  font-weight: 600;
+}
+
+.connector-details-button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border: 1px solid #d6e7e5;
+  border-radius: 11px;
+  background: #f3fbfa;
+  color: #073438;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 59, 61, 0.1);
+}
+
+.connector-details-button:hover {
+  background: #e7f7f5;
+}
+
+.connector-empty-state {
+  height: 80px;
+  color: #71888a;
+  text-align: center;
+}
+
+.connector-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.connector-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.connector-dialog {
+  width: min(100%, 440px);
+  padding: 22px;
+  border: 1px solid #d6e7e5;
+  border-radius: 15px;
+  background: #f3fbfa;
+  box-shadow: 0 18px 50px rgba(0, 40, 43, 0.22);
+}
+
+.connector-dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.connector-dialog-heading h2 {
+  margin: 0;
+  color: #073438;
+  font-family: Sora, Manrope, sans-serif;
+  font-size: 18px;
+}
+
+.connector-dialog-heading button {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid #d6e7e5;
+  border-radius: 9px;
+  color: #315459;
+  cursor: pointer;
+}
+
+.connector-dialog dl {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.connector-dialog dl > div {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 12px;
+  font-size: 13px;
+}
+
+.connector-dialog dt {
+  color: #71888a;
+}
+
+.connector-dialog dd {
+  margin: 0;
+  color: #073438;
+}
+
+@media (max-width: 1100px) {
+  .connector-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .connector-inventory-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 360px);
+  }
+}
+
+@media (max-width: 760px) {
+  .connector-page {
+    gap: 22px;
+  }
+
+  .connector-inventory-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .connector-table {
+    min-width: 1050px;
+  }
+}
+
+@media (max-width: 480px) {
+  .connector-summary {
+    grid-template-columns: 1fr;
+  }
+}

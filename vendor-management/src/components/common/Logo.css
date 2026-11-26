@@ -1,0 +1,52 @@
+
+/* Main Logo Container */
+.dmc-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dmc-logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+/* Logo Image */
+.dmc-logo-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Dark Sidebar Logo */
+.dmc-logo-light .dmc-logo-image {
+  filter: brightness(0) invert(1);
+}
+
+/* Know Your Customer Text */
+.dmc-logo-tagline {
+  margin-top: 3px;
+  color: #55c9c3;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* Light Logo Text */
+.dmc-logo-light .dmc-logo-tagline {
+  color: #72d8d0;
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+  .dmc-logo-tagline {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+}
